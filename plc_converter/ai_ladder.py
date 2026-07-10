@@ -9,7 +9,7 @@ from pathlib import Path
 
 from .models import ProgramIR
 from .paths import ENV_FILE, PROJECT_ROOT
-from .ladder_patterns.prompt_builder import build_pattern_guide
+from .ladder_patterns.prompt_builder import build_pattern_guide, build_style_rules
 from .st_parser import parse_st, parse_st_file
 
 DEFAULT_GEMINI_MODEL = "gemini-2.0-flash"
@@ -19,74 +19,11 @@ DEFAULT_RETRY_BASE_DELAY = 10.0
 DEFAULT_RETRY_MAX_DELAY = 120.0
 DEFAULT_REQUEST_DELAY = 3.0
 
-LADDER_PROMPT = """You convert Mitsubishi PLC Structured Text (ST) into ONE SVG ladder diagram.
+LADDER_PROMPT_TEMPLATE = """You convert Mitsubishi PLC Structured Text (ST) into ONE SVG ladder diagram.
 
 Follow these HARD RULES exactly. Do not invent alternate styles.
 
-=== CANVAS ===
-- White background (#ffffff).
-- Left power rail ONLY at x=16, full rung height, stroke #374151, stroke-width 3.
-- Do NOT draw a right power rail.
-- Each rung separated by a thin horizontal line (#e5e7eb, stroke-width 1).
-
-=== GRID / SPACING (fixed) ===
-- Contact cell: 56 x 26 px.
-- Coil cell: 80 x 26 px.
-- Timer cell: 100 x 36 px.
-- Horizontal gap between series elements: 6 px.
-- Vertical gap between parallel OR branches: 42 px (contact center to center).
-- Rung label column width: 180 px from left rail.
-- First rung starts at y=40; each rung block ~100-120 px tall depending on branch count.
-
-=== TYPOGRAPHY (never change) ===
-- Device labels (M202, Y20, T100, X1C ...):
-  font-family="Consolas, 'Courier New', monospace"
-  font-size="10" font-weight="bold" fill="#111827" text-anchor="middle"
-  placed ABOVE the symbol center.
-- Rung labels (left column):
-  font-family="Consolas, 'Courier New', monospace"
-  font-size="10" font-weight="normal" fill="#111827" text-anchor="start"
-  format exactly: "R{{n}}  step {{step}}" using ST rung comments.
-- Program title (top):
-  font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#111827"
-  format: "{{program_name}}  |  {{project}}"
-
-=== WIRES ===
-- All wires: stroke #374151, stroke-width 2, stroke-linecap="round", fill="none".
-- Draw junction dots (circle r=2.5 fill #374151) at every T-junction / branch merge.
-
-=== CONTACTS (M, X, SM, etc.) ===
-- NO contact: two vertical blue bars (#2563eb, stroke-width 2.5), 14 px apart, height 18 px.
-- NC contact: same bars PLUS one diagonal slash (#2563eb, stroke-width 2).
-- Horizontal wire enters left, exits right through contact center y.
-- Never use Unicode "| |" text as symbols; always draw geometry.
-
-=== COILS / OUTPUTS ===
-- Coil: ellipse rx=34 ry=11, fill #fff, stroke #dc2626 stroke-width 2.
-- SET coil: prefix label "S" before device name inside/near coil.
-- RST coil: prefix label "R" before device name.
-- Timer: rounded rect, stroke #d97706, label like "T100" and preset "T#8000ms" below or inside box.
-
-=== LOGIC LAYOUT ===
-- AND: elements in series on the same horizontal rail, left to right.
-- OR: multiple parallel horizontal rails; connect each branch to left vertical bus;
-  merge branches with a vertical bus on the right side of the OR group, then continue to coil.
-- Nested OR/AND: use additional parallel rails; never draw diagonal shortcuts.
-- One rung = one output coil/timer/set/rst at the far right of that rung (except special multi-output if ST explicitly has them).
-- Preserve ST device names exactly (M202, SM412, Y3C, /X1C for NC inputs if present in ST).
-
-=== FORBIDDEN ===
-- No CSS class-based theming that changes per rung.
-- No varying font families or sizes between rungs.
-- No decorative headers, gradients, shadows, or icons.
-- No markdown in output.
-- No right-side power rail.
-- No ASCII-art ladder text.
-
-=== OUTPUT ===
-- Output ONLY valid SVG XML: starts with <?xml or <svg, ends with </svg>.
-- Use explicit numeric coordinates (no percentage layout).
-- Group wires, symbols, labels in <g> if helpful, but keep style consistent.
+{style_rules}
 
 Program: {program_name}
 Project: {project}
@@ -161,7 +98,8 @@ def build_prompt(program: ProgramIR, st_text: str) -> str:
     pattern_guide = build_pattern_guide(program)
     if len(pattern_guide) > 12000:
         pattern_guide = pattern_guide[:12000] + "\n(* ... pattern guide truncated ... *)"
-    return LADDER_PROMPT.format(
+    return LADDER_PROMPT_TEMPLATE.format(
+        style_rules=build_style_rules(),
         program_name=program.name,
         project=program.project or "unknown",
         pattern_guide=pattern_guide,

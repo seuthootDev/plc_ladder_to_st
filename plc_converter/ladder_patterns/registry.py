@@ -6,6 +6,9 @@ from pathlib import Path
 from typing import Any
 
 from ..ladder_layout import (
+    _can_gripper_orb,
+    _can_parallel_actions,
+    _can_sensor_mps,
     _match_anb_or_block,
     _match_and_or_tail,
     _match_gripper_orb_prefix,
@@ -62,16 +65,51 @@ def get_style() -> dict[str, Any]:
 
 
 def _is_contact_series(expr: BoolExpr) -> bool:
-    if expr.op == "CONTACT":
+    if expr.op in {"CONTACT", "CMP_NE"}:
         return True
-    if expr.op == "NOT" and expr.args and expr.args[0].op == "CONTACT":
-        return True
+    if expr.op == "NOT" and expr.args:
+        return _is_contact_series(expr.args[0])
     if expr.op == "AND":
         return all(_is_contact_series(arg) for arg in expr.args)
     return False
 
 
+def _match_double_negation(expr: BoolExpr) -> bool:
+    return (
+        expr.op == "NOT"
+        and bool(expr.args)
+        and expr.args[0].op == "NOT"
+        and _is_contact_series(expr.args[0].args[0])
+    )
+
+
+def _match_demorgan_parallel(expr: BoolExpr) -> bool:
+    if expr.op != "NOT" or not expr.args:
+        return False
+    inner = expr.args[0]
+    return (
+        inner.op == "AND"
+        and len(inner.args) >= 2
+        and all(
+            arg.op == "NOT" and arg.args and _is_contact_series(arg.args[0])
+            for arg in inner.args
+        )
+    )
+
+
+def _match_top_or_with_tail(expr: BoolExpr) -> bool:
+    """OR(complex_branch, tail_contact) e.g. nested AND/OR ... OR (M503)."""
+    if expr.op != "OR" or len(expr.args) < 2:
+        return False
+    flags = [_is_contact_series(arg) for arg in expr.args]
+    return any(flags) and not all(flags)
+
+
 def classify_condition(expr: BoolExpr) -> str:
+    if _match_double_negation(expr):
+        return "series_and"
+    if _match_demorgan_parallel(expr):
+        return "parallel_or"
     if _match_triple_rail_orb(expr):
         return "triple_rail_orb_timer"
     if _match_gripper_orb_prefix(expr):
@@ -82,12 +120,14 @@ def classify_condition(expr: BoolExpr) -> str:
         return "and_or_tail"
     if _match_or_and_tail(expr):
         return "or_and_tail"
+    if _match_top_or_with_tail(expr):
+        return "or_and_tail"
     if _match_series_or_tail(expr):
         return "nested_or_in_and"
     if expr.op == "OR" and len(expr.args) >= 2:
         if all(_is_contact_series(arg) for arg in expr.args):
             return "parallel_or"
-    if expr.op == "AND" and _is_contact_series(expr):
+    if _is_contact_series(expr):
         return "series_and"
     return "generic"
 
@@ -101,18 +141,31 @@ def effective_condition(rung: Rung) -> BoolExpr:
 
 
 def classify_rung(rung: Rung) -> str:
+    actions = rung.actions
+    if _can_gripper_orb(actions, rung):
+        return "gripper_orb"
+    if _can_sensor_mps(actions, rung):
+        return "sensor_mps_fork"
+    if _can_parallel_actions(actions, rung):
+        shared = effective_condition(rung)
+        if _match_triple_rail_orb(shared):
+            return "triple_rail_orb_timer"
+        return "parallel_outputs"
+
+    if len(actions) == 1:
+        kind = actions[0].kind
+        if kind in {ActionKind.SET, ActionKind.RST}:
+            return "set_rst"
+        if kind == ActionKind.TON_COIL:
+            return "timer_on_branch"
+
     pattern = classify_condition(effective_condition(rung))
     if pattern != "generic":
         return pattern
 
-    if len(rung.actions) > 1:
+    if len(actions) > 1:
         return "parallel_outputs"
-    if rung.actions and rung.actions[0].kind in {ActionKind.SET, ActionKind.RST}:
-        return "set_rst"
-    if rung.actions and rung.actions[0].kind == ActionKind.TON_COIL:
-        return "timer_on_branch"
-
-    if any(a.kind == ActionKind.TON_COIL for a in rung.actions):
+    if any(a.kind == ActionKind.TON_COIL for a in actions):
         return "timer_on_branch"
     return "generic"
 

@@ -1,3 +1,9 @@
 ﻿.env
+.env.local
 __pycache__/
 *.pyc
+
+# Generated pipeline outputs (regenerate via main.py)
+plc_export/ladder/
+plc_export/ladder_ai/
+plc_export/st/

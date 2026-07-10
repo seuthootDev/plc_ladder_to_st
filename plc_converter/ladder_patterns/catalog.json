@@ -22,6 +22,7 @@
     "series_gap": 6,
     "branch_row_pitch": 42,
     "rung_label_format": "R{n}  step {step}",
+    "rung_label_col_width": 180,
     "junction_dot_r": 2.5
   },
   "patterns": [
