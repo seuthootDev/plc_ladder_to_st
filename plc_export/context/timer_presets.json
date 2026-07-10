@@ -1,0 +1,138 @@
+{
+  "10": [
+    {
+      "step": 12,
+      "timer": "T210",
+      "preset": "K5000"
+    },
+    {
+      "step": 18,
+      "timer": "T200",
+      "preset": "K100"
+    }
+  ],
+  "11": [
+    {
+      "step": 3,
+      "timer": "T201",
+      "preset": "K50"
+    }
+  ],
+  "20": [
+    {
+      "step": 9,
+      "timer": "T50",
+      "preset": "K10"
+    },
+    {
+      "step": 48,
+      "timer": "T51",
+      "preset": "K5"
+    },
+    {
+      "step": 52,
+      "timer": "T52",
+      "preset": "K20"
+    }
+  ],
+  "21": [
+    {
+      "step": 9,
+      "timer": "T70",
+      "preset": "K10"
+    },
+    {
+      "step": 48,
+      "timer": "T71",
+      "preset": "K5"
+    },
+    {
+      "step": 52,
+      "timer": "T72",
+      "preset": "K20"
+    },
+    {
+      "step": 144,
+      "timer": "T700",
+      "preset": "K10"
+    }
+  ],
+  "30": [
+    {
+      "step": 12,
+      "timer": "T20",
+      "preset": "K10"
+    },
+    {
+      "step": 22,
+      "timer": "T21",
+      "preset": "K10"
+    },
+    {
+      "step": 33,
+      "timer": "T22",
+      "preset": "K10"
+    },
+    {
+      "step": 43,
+      "timer": "T23",
+      "preset": "K10"
+    },
+    {
+      "step": 53,
+      "timer": "T35",
+      "preset": "K30"
+    }
+  ],
+  "32": [
+    {
+      "step": 6,
+      "timer": "T2",
+      "preset": "K10"
+    },
+    {
+      "step": 16,
+      "timer": "T3",
+      "preset": "K10"
+    },
+    {
+      "step": 46,
+      "timer": "T10",
+      "preset": "K5"
+    }
+  ],
+  "33": [
+    {
+      "step": 10,
+      "timer": "T25",
+      "preset": "K10"
+    },
+    {
+      "step": 23,
+      "timer": "T26",
+      "preset": "K10"
+    },
+    {
+      "step": 89,
+      "timer": "T209",
+      "preset": "K50"
+    }
+  ],
+  "99": [
+    {
+      "step": 61,
+      "timer": "T100",
+      "preset": "K80"
+    },
+    {
+      "step": 75,
+      "timer": "T101",
+      "preset": "K80"
+    },
+    {
+      "step": 104,
+      "timer": "T110",
+      "preset": "K30"
+    }
+  ]
+}

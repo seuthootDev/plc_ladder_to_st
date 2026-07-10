@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "source_pdf": "12314_extracted.txt",
+  "csv_dir": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/csv",
+  "output_dir": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/plc_export/context",
+  "program_count": 12,
+  "programs": [
+    "01",
+    "02",
+    "10",
+    "11",
+    "12",
+    "20",
+    "21",
+    "30",
+    "31",
+    "32",
+    "33",
+    "99"
+  ],
+  "device_comment_count": 333,
+  "next_step": "Use plc_export/context/programs/*.json as input for ST generator"
+}

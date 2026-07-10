@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>P99_Error Ladder View (AI)</title>
+  <style>
+    body { margin: 0; font-family: "Segoe UI", sans-serif; background: #f8fafc; color: #111827; }
+    header { padding: 16px 20px; background: #1e3a5f; color: #fff; }
+    header h1 { margin: 0 0 4px; font-size: 18px; }
+    header p { margin: 0; font-size: 13px; color: #cbd5e1; }
+    .badge { display: inline-block; background: #7c3aed; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 999px; margin-left: 8px; vertical-align: middle; }
+    .wrap { padding: 16px; overflow: auto; }
+    .panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+    svg { display: block; width: auto; height: auto; max-width: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>P99_Error<span class="badge">AI track</span></h1>
+    <p>plc project_260626 · rung 10 · Gemini gemini-flash-latest · 2026-07-09 14:59:04</p>
+  </header>
+  <div class="wrap">
+    <div class="panel"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1210" style="background-color:#ffffff;">
+  <!-- PROGRAM HEADER -->
+  <text x="16" y="30" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#111827">P99_Error  |  plc project_260626</text>
+
+  <!-- LEFT POWER RAIL -->
+  <line x1="16" y1="50" x2="16" y2="1190" stroke="#374151" stroke-width="3" />
+
+  <!-- ==================== RUNG 1 ==================== -->
+  <text x="24" y="68" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R1  step 0 | Total Error</text>
+  
+  <!-- Main horizontal rail to logic start -->
+  <line x1="16" y1="80" x2="180" y2="80" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  
+  <!-- Parallel Branch 1: M54 (NO) -->
+  <text x="208" y="66" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M54</text>
+  <line x1="180" y1="80" x2="201" y2="80" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="80" x2="236" y2="80" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="71" x2="201" y2="89" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="71" x2="215" y2="89" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Parallel Branch 2: M2127 (NO) -->
+  <text x="208" y="108" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2127</text>
+  <line x1="180" y1="122" x2="201" y2="122" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="122" x2="236" y2="122" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="113" x2="201" y2="131" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="113" x2="215" y2="131" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Parallel Branch 3: M3127 (NO) -->
+  <text x="208" y="150" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M3127</text>
+  <line x1="180" y1="164" x2="201" y2="164" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="164" x2="236" y2="164" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="155" x2="201" y2="173" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="155" x2="215" y2="173" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branch Vertical lines and Dots -->
+  <line x1="180" y1="80" x2="180" y2="164" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="236" y1="80" x2="236" y2="164" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="122" r="2.5" fill="#374151" />
+  <circle cx="180" cy="164" r="2.5" fill="#374151" />
+  <circle cx="236" cy="122" r="2.5" fill="#374151" />
+  <circle cx="236" cy="164" r="2.5" fill="#374151" />
+
+  <!-- Output Coil M57 -->
+  <text x="540" y="66" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M57</text>
+  <line x1="236" y1="80" x2="506" y2="80" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="80" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Separator -->
+  <line x1="16" y1="185" x2="600" y2="185" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 2 ==================== -->
+  <text x="24" y="200" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R2  step 13 | MCP Error</text>
+  <line x1="16" y1="212" x2="180" y2="212" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch 1: X1F (NC) -->
+  <text x="208" y="198" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">X1F</text>
+  <line x1="180" y1="212" x2="201" y2="212" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="212" x2="236" y2="212" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="203" x2="201" y2="221" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="203" x2="215" y2="221" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="198" y1="219" x2="218" y2="205" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Branch 2: M50 (NO) -> NOT M212 (NC) -->
+  <!-- M50 NO -->
+  <text x="208" y="240" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M50</text>
+  <line x1="180" y1="254" x2="201" y2="254" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="254" x2="242" y2="254" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="245" x2="201" y2="263" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="245" x2="215" y2="263" stroke="#2563eb" stroke-width="2.5" />
+  <!-- M212 NC -->
+  <text x="270" y="240" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M212</text>
+  <line x1="242" y1="254" x2="263" y2="254" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="254" x2="298" y2="254" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="245" x2="263" y2="263" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="245" x2="277" y2="263" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="261" x2="280" y2="247" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Connections -->
+  <line x1="180" y1="212" x2="180" y2="254" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="236" y1="212" x2="298" y2="212" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="298" y1="212" x2="298" y2="254" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="254" r="2.5" fill="#374151" />
+  <circle cx="298" cy="212" r="2.5" fill="#374151" />
+
+  <!-- Output Coil M50 -->
+  <text x="540" y="198" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M50</text>
+  <line x1="298" y1="212" x2="506" y2="212" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="212" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Separator -->
+  <line x1="16" y1="270" x2="600" y2="270" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 3 ==================== -->
+  <text x="24" y="285" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R3  step 25</text>
+  <line x1="16" y1="297" x2="180" y2="297" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch 1: SM401 (NO) -->
+  <text x="208" y="283" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">SM401</text>
+  <line x1="180" y1="297" x2="201" y2="297" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="297" x2="236" y2="297" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="288" x2="201" y2="306" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="288" x2="215" y2="306" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branch 2: M51 (NO) -> NOT M212 (NC) -->
+  <!-- M51 NO -->
+  <text x="208" y="325" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M51</text>
+  <line x1="180" y1="339" x2="201" y2="339" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="339" x2="242" y2="339" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="330" x2="201" y2="348" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="330" x2="215" y2="348" stroke="#2563eb" stroke-width="2.5" />
+  <!-- M212 NC -->
+  <text x="270" y="325" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M212</text>
+  <line x1="242" y1="339" x2="263" y2="339" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="339" x2="298" y2="339" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="330" x2="263" y2="348" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="330" x2="277" y2="348" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="346" x2="280" y2="332" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Connections -->
+  <line x1="180" y1="297" x2="180" y2="339" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="236" y1="297" x2="298" y2="297" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="298" y1="297" x2="298" y2="339" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="339" r="2.5" fill="#374151" />
+  <circle cx="298" cy="297" r="2.5" fill="#374151" />
+
+  <!-- Output Coil M51 -->
+  <text x="540" y="283" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M51</text>
+  <line x1="298" y1="297" x2="506" y2="297" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="297" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Separator -->
+  <line x1="16" y1="352" x2="600" y2="352" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 4 ==================== -->
+  <text x="24" y="365" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R4  step 30</text>
+  <line x1="16" y1="378" x2="180" y2="378" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch 1: SM401 (NO) -->
+  <text x="208" y="364" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">SM401</text>
+  <line x1="180" y1="378" x2="201" y2="378" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="378" x2="236" y2="378" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="369" x2="201" y2="387" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="369" x2="215" y2="387" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branch 2: M52 (NO) -> NOT M212 (NC) -->
+  <!-- M52 NO -->
+  <text x="208" y="406" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M52</text>
+  <line x1="180" y1="420" x2="201" y2="420" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="420" x2="242" y2="420" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="411" x2="201" y2="429" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="411" x2="215" y2="429" stroke="#2563eb" stroke-width="2.5" />
+  <!-- M212 NC -->
+  <text x="270" y="406" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M212</text>
+  <line x1="242" y1="420" x2="263" y2="420" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="420" x2="298" y2="420" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="411" x2="263" y2="429" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="411" x2="277" y2="429" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="427" x2="280" y2="413" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Connections -->
+  <line x1="180" y1="378" x2="180" y2="420" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="236" y1="378" x2="298" y2="378" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="298" y1="378" x2="298" y2="420" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="420" r="2.5" fill="#374151" />
+  <circle cx="298" cy="378" r="2.5" fill="#374151" />
+
+  <!-- Output Coil M52 -->
+  <text x="540" y="364" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M52</text>
+  <line x1="298" y1="378" x2="506" y2="378" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="378" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Separator -->
+  <line x1="16" y1="432" x2="600" y2="432" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 5 ==================== -->
+  <text x="24" y="446" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R5  step 35</text>
+  <line x1="16" y1="458" x2="180" y2="458" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- B1: M50 -->
+  <text x="208" y="444" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M50</text>
+  <line x1="180" y1="458" x2="201" y2="458" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="458" x2="236" y2="458" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="449" x2="201" y2="467" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="449" x2="215" y2="467" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- B2: M51 -->
+  <text x="208" y="486" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M51</text>
+  <line x1="180" y1="500" x2="201" y2="500" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="500" x2="236" y2="500" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="491" x2="201" y2="509" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="491" x2="215" y2="509" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- B3: M52 -->
+  <text x="208" y="528" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M52</text>
+  <line x1="180" y1="542" x2="201" y2="542" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="542" x2="236" y2="542" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="533" x2="201" y2="551" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="533" x2="215" y2="551" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- B4: M53 -->
+  <text x="208" y="570" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M53</text>
+  <line x1="180" y1="584" x2="201" y2="584" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="584" x2="236" y2="584" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="575" x2="201" y2="593" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="575" x2="215" y2="593" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Vertical lines and Dots for 4 branches -->
+  <line x1="180" y1="458" x2="180" y2="584" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="236" y1="458" x2="236" y2="584" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="500" r="2.5" fill="#374151" />
+  <circle cx="180" cy="542" r="2.5" fill="#374151" />
+  <circle cx="180" cy="584" r="2.5" fill="#374151" />
+  <circle cx="236" cy="500" r="2.5" fill="#374151" />
+  <circle cx="236" cy="542" r="2.5" fill="#374151" />
+  <circle cx="236" cy="584" r="2.5" fill="#374151" />
+
+  <!-- Coil M54 -->
+  <text x="540" y="444" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M54</text>
+  <line x1="236" y1="458" x2="506" y2="458" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="458" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Separator -->
+  <line x1="16" y1="590" x2="600" y2="590" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 6 ==================== -->
+  <text x="24" y="605" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R6  step 41 | Centering Error</text>
+  <line x1="16" y1="618" x2="180" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch A1: Y40 (NO) -> NOT M2000 (NC) -->
+  <text x="208" y="604" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">Y40</text>
+  <line x1="180" y1="618" x2="201" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="618" x2="242" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="609" x2="201" y2="627" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="609" x2="215" y2="627" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="604" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2000</text>
+  <line x1="242" y1="618" x2="263" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="618" x2="298" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="609" x2="263" y2="627" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="609" x2="277" y2="627" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="625" x2="280" y2="611" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Branch A2: Y41 (NO) -> NOT M2001 (NC) -->
+  <text x="208" y="646" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">Y41</text>
+  <line x1="180" y1="660" x2="201" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="660" x2="242" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="651" x2="201" y2="669" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="651" x2="215" y2="669" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="646" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2001</text>
+  <line x1="242" y1="660" x2="263" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="660" x2="298" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="651" x2="263" y2="669" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="651" x2="277" y2="669" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="667" x2="280" y2="653" stroke="#2563eb" stroke-width="2" />
+
+  <!-- A1 & A2 Vertical Connectors -->
+  <line x1="180" y1="618" x2="180" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="298" y1="618" x2="298" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="660" r="2.5" fill="#374151" />
+  <circle cx="298" cy="618" r="2.5" fill="#374151" />
+
+  <!-- Series Contact after A: T100 (NO) -->
+  <text x="332" y="604" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">T100</text>
+  <line x1="298" y1="618" x2="319" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="333" y1="618" x2="360" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="319" y1="609" x2="319" y2="627" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="333" y1="609" x2="333" y2="627" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branch B: M2100 (NO) -> NOT M212 (NC) -->
+  <text x="208" y="688" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2100</text>
+  <line x1="180" y1="702" x2="201" y2="702" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="702" x2="242" y2="702" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="693" x2="201" y2="711" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="693" x2="215" y2="711" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="688" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M212</text>
+  <line x1="242" y1="702" x2="263" y2="702" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="702" x2="360" y2="702" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="693" x2="263" y2="711" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="693" x2="277" y2="711" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="709" x2="280" y2="695" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Outer OR vertical connectors -->
+  <line x1="180" y1="660" x2="180" y2="702" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="360" y1="618" x2="360" y2="702" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="702" r="2.5" fill="#374151" />
+  <circle cx="360" cy="618" r="2.5" fill="#374151" />
+
+  <!-- Output Parallel Split -->
+  <line x1="360" y1="618" x2="440" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="440" y1="618" x2="440" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="440" cy="618" r="2.5" fill="#374151" />
+
+  <!-- Top Output: Coil M2100 -->
+  <text x="540" y="604" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2100</text>
+  <line x1="440" y1="618" x2="506" y2="618" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="618" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Bottom Output: Timer T100 -->
+  <line x1="440" y1="660" x2="480" y2="660" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <rect x="480" y="642" width="100" height="36" rx="4" fill="#ffffff" stroke="#d97706" stroke-width="2" />
+  <text x="530" y="654" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">T100</text>
+  <text x="530" y="668" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#d97706" text-anchor="middle">T#8000ms</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="725" x2="600" y2="725" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 7 ==================== -->
+  <text x="24" y="745" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R7  step 65</text>
+  <line x1="16" y1="758" x2="180" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch A1: Y42 (NO) -> NOT M2002 (NC) -->
+  <text x="208" y="744" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">Y42</text>
+  <line x1="180" y1="758" x2="201" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="758" x2="242" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="749" x2="201" y2="767" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="749" x2="215" y2="767" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="744" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2002</text>
+  <line x1="242" y1="758" x2="263" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="758" x2="298" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="749" x2="263" y2="767" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="749" x2="277" y2="767" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="765" x2="280" y2="751" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Branch A2: Y43 (NO) -> NOT M2003 (NC) -->
+  <text x="208" y="786" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">Y43</text>
+  <line x1="180" y1="800" x2="201" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="800" x2="242" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="791" x2="201" y2="809" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="791" x2="215" y2="809" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="786" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2003</text>
+  <line x1="242" y1="800" x2="263" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="800" x2="298" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="791" x2="263" y2="809" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="791" x2="277" y2="809" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="807" x2="280" y2="793" stroke="#2563eb" stroke-width="2" />
+
+  <!-- A1 & A2 Vertical Connectors -->
+  <line x1="180" y1="758" x2="180" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="298" y1="758" x2="298" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="800" r="2.5" fill="#374151" />
+  <circle cx="298" cy="758" r="2.5" fill="#374151" />
+
+  <!-- Series Contact after A: T101 (NO) -->
+  <text x="332" y="744" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">T101</text>
+  <line x1="298" y1="758" x2="319" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="333" y1="758" x2="360" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="319" y1="749" x2="319" y2="767" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="333" y1="749" x2="333" y2="767" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branch B: M2101 (NO) -> NOT M212 (NC) -->
+  <text x="208" y="828" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2101</text>
+  <line x1="180" y1="842" x2="201" y2="842" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="842" x2="242" y2="842" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="833" x2="201" y2="851" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="833" x2="215" y2="851" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="828" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M212</text>
+  <line x1="242" y1="842" x2="263" y2="842" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="842" x2="360" y2="842" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="833" x2="263" y2="851" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="833" x2="277" y2="851" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="849" x2="280" y2="835" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Outer OR vertical connectors -->
+  <line x1="180" y1="800" x2="180" y2="842" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="360" y1="758" x2="360" y2="842" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="842" r="2.5" fill="#374151" />
+  <circle cx="360" cy="758" r="2.5" fill="#374151" />
+
+  <!-- Output Parallel Split -->
+  <line x1="360" y1="758" x2="440" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="440" y1="758" x2="440" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="440" cy="758" r="2.5" fill="#374151" />
+
+  <!-- Top Output: Coil M2101 -->
+  <text x="540" y="744" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2101</text>
+  <line x1="440" y1="758" x2="506" y2="758" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="758" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Bottom Output: Timer T101 -->
+  <line x1="440" y1="800" x2="480" y2="800" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <rect x="480" y="782" width="100" height="36" rx="4" fill="#ffffff" stroke="#d97706" stroke-width="2" />
+  <text x="530" y="794" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">T101</text>
+  <text x="530" y="808" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#d97706" text-anchor="middle">T#8000ms</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="865" x2="600" y2="865" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 8 ==================== -->
+  <text x="24" y="885" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R8  step 79</text>
+  <line x1="16" y1="898" x2="180" y2="898" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch 1: M2100 -->
+  <text x="208" y="884" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2100</text>
+  <line x1="180" y1="898" x2="201" y2="898" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="898" x2="236" y2="898" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="889" x2="201" y2="907" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="889" x2="215" y2="907" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branch 2: M2101 -->
+  <text x="208" y="926" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2101</text>
+  <line x1="180" y1="940" x2="201" y2="940" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="940" x2="236" y2="940" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="931" x2="201" y2="949" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="931" x2="215" y2="949" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Branching vertical lines -->
+  <line x1="180" y1="898" x2="180" y2="940" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="236" y1="898" x2="236" y2="940" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="940" r="2.5" fill="#374151" />
+  <circle cx="236" cy="940" r="2.5" fill="#374151" />
+
+  <!-- Coil M2127 -->
+  <text x="540" y="884" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M2127</text>
+  <line x1="236" y1="898" x2="506" y2="898" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <ellipse cx="540" cy="898" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Separator -->
+  <line x1="16" y1="950" x2="600" y2="950" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 9 ==================== -->
+  <text x="24" y="965" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R9  step 83 | Gripper Error</text>
+  <line x1="16" y1="978" x2="180" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Branch A: Y54 -> Y56 -> [NOT X1C OR X1D] -->
+  <!-- Y54 NO (Col 1) -->
+  <text x="208" y="964" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">Y54</text>
+  <line x1="180" y1="978" x2="201" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="978" x2="242" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="969" x2="201" y2="987" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="969" x2="215" y2="987" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Y56 NO (Col 2) -->
+  <text x="270" y="964" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">Y56</text>
+  <line x1="242" y1="978" x2="263" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="978" x2="298" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="969" x2="263" y2="987" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="969" x2="277" y2="987" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Sub-branch A1: NOT X1C (NC, Col 3) -->
+  <text x="332" y="964" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">X1C</text>
+  <line x1="298" y1="978" x2="319" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="333" y1="978" x2="360" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="319" y1="969" x2="319" y2="987" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="333" y1="969" x2="333" y2="987" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="316" y1="985" x2="336" y2="971" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Sub-branch A2: X1D (NO, Col 3) at y=1020 -->
+  <text x="332" y="1006" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">X1D</text>
+  <line x1="298" y1="1020" x2="319" y2="1020" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="333" y1="1020" x2="360" y2="1020" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="319" y1="1011" x2="319" y2="1029" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="333" y1="1011" x2="333" y2="1029" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Sub-branch A1/A2 Connectors -->
+  <line x1="298" y1="978" x2="298" y2="1020" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="360" y1="978" x2="360" y2="1020" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="298" cy="978" r="2.5" fill="#374151" />
+  <circle cx="360" cy="978" r="2.5" fill="#374151" />
+
+  <!-- Branch B: M3100 (NO) -> NOT M212 (NC) at y=1062 -->
+  <text x="208" y="1048" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M3100</text>
+  <line x1="180" y1="1062" x2="201" y2="1062" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="1062" x2="242" y2="1062" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="1053" x2="201" y2="1071" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="1053" x2="215" y2="1071" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="270" y="1048" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M212</text>
+  <line x1="242" y1="1062" x2="263" y2="1062" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="277" y1="1062" x2="360" y2="1062" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="263" y1="1053" x2="263" y2="1071" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="277" y1="1053" x2="277" y2="1071" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="260" y1="1069" x2="280" y2="1055" stroke="#2563eb" stroke-width="2" />
+
+  <!-- Branch A/B Left rail vertical connection -->
+  <line x1="180" y1="978" x2="180" y2="1062" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="180" cy="1062" r="2.5" fill="#374151" />
+
+  <!-- Branch A/B Right merge vertical line at x=360 -->
+  <line x1="360" y1="978" x2="360" y2="1104" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="360" cy="978" r="2.5" fill="#374151" />
+  <circle cx="360" cy="1020" r="2.5" fill="#374151" />
+  <circle cx="360" cy="1062" r="2.5" fill="#374151" />
+
+  <!-- Top Output Branch (Main y=978): Contact T110 -> Coil M3100 -->
+  <text x="394" y="964" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">T110</text>
+  <line x1="360" y1="978" x2="381" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="395" y1="978" x2="506" y2="978" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="381" y1="969" x2="381" y2="987" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="395" y1="969" x2="395" y2="987" stroke="#2563eb" stroke-width="2.5" />
+
+  <text x="540" y="964" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M3100</text>
+  <ellipse cx="540" cy="978" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+  <!-- Bottom Output Branch (at y=1104): Timer T110 -->
+  <line x1="360" y1="1104" x2="480" y2="1104" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <rect x="480" y="1086" width="100" height="36" rx="4" fill="#ffffff" stroke="#d97706" stroke-width="2" />
+  <text x="530" y="1098" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">T110</text>
+  <text x="530" y="1112" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#d97706" text-anchor="middle">T#3s</text>
+
+  <!-- Separator -->
+  <line x1="16" y1="1135" x2="600" y2="1135" stroke="#e5e7eb" stroke-width="1" />
+
+  <!-- ==================== RUNG 10 ==================== -->
+  <text x="24" y="1150" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="normal" fill="#111827" text-anchor="start">R10  step 108</text>
+  <line x1="16" y1="1162" x2="180" y2="1162" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Contact: M3100 (NO) -->
+  <text x="208" y="1148" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M3100</text>
+  <line x1="180" y1="1162" x2="201" y2="1162" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="215" y1="1162" x2="506" y2="1162" stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" />
+  <line x1="201" y1="1153" x2="201" y2="1171" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="215" y1="1153" x2="215" y2="1171" stroke="#2563eb" stroke-width="2.5" />
+
+  <!-- Coil M3127 -->
+  <text x="540" y="1148" font-family="Consolas, 'Courier New', monospace" font-size="10" font-weight="bold" fill="#111827" text-anchor="middle">M3127</text>
+  <ellipse cx="540" cy="1162" rx="34" ry="11" fill="#ffffff" stroke="#dc2626" stroke-width="2" />
+
+</svg></div>
+    <div class="panel">
+      <strong>Parse warnings</strong>
+      <pre style="white-space: pre-wrap; font-size: 12px;">none</pre>
+    </div>
+  </div>
+</body>
+</html>

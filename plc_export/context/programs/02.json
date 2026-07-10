@@ -1,0 +1,417 @@
+{
+  "program_no": "02",
+  "program_name": "Lamp",
+  "pou_name": "P02_Lamp",
+  "project": "plc project_260626",
+  "cpu": "QCPU (Q mode) Q06H",
+  "csv_path": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/csv/02.csv",
+  "line_labels": [],
+  "instructions": [
+    {
+      "step": 0,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M202",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 1,
+      "label": "",
+      "mnemonic": "LDI",
+      "operand": "M202",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 2,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "SM412",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 3,
+      "label": "",
+      "mnemonic": "ORB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 4,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M503",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 5,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y20",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 6,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M57",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 7,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "SM412",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 8,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M503",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 9,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y3C",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 10,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M202",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 11,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 12,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M503",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 13,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y3D",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 14,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M202",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 15,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M211",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 16,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "SM412",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 17,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M215",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 18,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M216",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 19,
+      "label": "",
+      "mnemonic": "ORB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 20,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 21,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M503",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 22,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y3E",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 23,
+      "label": "",
+      "mnemonic": "LDI",
+      "operand": "M57",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 24,
+      "label": "",
+      "mnemonic": "INV",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 25,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M220",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 26,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M503",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 27,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y3F",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 28,
+      "label": "",
+      "mnemonic": "END",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    }
+  ],
+  "devices_used": [
+    "M202",
+    "SM412",
+    "M503",
+    "Y20",
+    "M57",
+    "Y3C",
+    "M210",
+    "Y3D",
+    "M211",
+    "M215",
+    "M216",
+    "Y3E",
+    "M220",
+    "Y3F"
+  ],
+  "device_comments": {
+    "M202": "제어반 운전준비완료",
+    "SM412": "초 클럭1",
+    "M503": "램프 테스트[HMI]       PB",
+    "Y20": "운전준비ON PBL  LAMP",
+    "M57": "설비 종합이상",
+    "Y3C": "제어반 타워램프 적색  [ ]",
+    "M210": "운전모드 수동[ ]",
+    "Y3D": "제어반 타워램프 황색  [ ]",
+    "M211": "운전모드 자동[ ]",
+    "M215": "가와실러자동기동",
+    "M216": "현대 프라이머자동기동",
+    "Y3E": "제어반 타워램프 녹색  [ ]",
+    "M220": "부져정지 SET",
+    "Y3F": "제어반 타워램프 부져  [ ]"
+  },
+  "timer_presets": [],
+  "var_hints": [
+    {
+      "device": "M202",
+      "comment": "제어반 운전준비완료",
+      "data_type": "BOOL",
+      "st_name": "M202"
+    },
+    {
+      "device": "SM412",
+      "comment": "초 클럭1",
+      "data_type": "BOOL",
+      "st_name": "SM412"
+    },
+    {
+      "device": "M503",
+      "comment": "램프 테스트[HMI]       PB",
+      "data_type": "BOOL",
+      "st_name": "M503"
+    },
+    {
+      "device": "Y20",
+      "comment": "운전준비ON PBL  LAMP",
+      "data_type": "BOOL",
+      "st_name": "Y20"
+    },
+    {
+      "device": "M57",
+      "comment": "설비 종합이상",
+      "data_type": "BOOL",
+      "st_name": "M57"
+    },
+    {
+      "device": "Y3C",
+      "comment": "제어반 타워램프 적색  [ ]",
+      "data_type": "BOOL",
+      "st_name": "Y3C"
+    },
+    {
+      "device": "M210",
+      "comment": "운전모드 수동[ ]",
+      "data_type": "BOOL",
+      "st_name": "M210"
+    },
+    {
+      "device": "Y3D",
+      "comment": "제어반 타워램프 황색  [ ]",
+      "data_type": "BOOL",
+      "st_name": "Y3D"
+    },
+    {
+      "device": "M211",
+      "comment": "운전모드 자동[ ]",
+      "data_type": "BOOL",
+      "st_name": "M211"
+    },
+    {
+      "device": "M215",
+      "comment": "가와실러자동기동",
+      "data_type": "BOOL",
+      "st_name": "M215"
+    },
+    {
+      "device": "M216",
+      "comment": "현대 프라이머자동기동",
+      "data_type": "BOOL",
+      "st_name": "M216"
+    },
+    {
+      "device": "Y3E",
+      "comment": "제어반 타워램프 녹색  [ ]",
+      "data_type": "BOOL",
+      "st_name": "Y3E"
+    },
+    {
+      "device": "M220",
+      "comment": "부져정지 SET",
+      "data_type": "BOOL",
+      "st_name": "M220"
+    },
+    {
+      "device": "Y3F",
+      "comment": "제어반 타워램프 부져  [ ]",
+      "data_type": "BOOL",
+      "st_name": "Y3F"
+    }
+  ],
+  "ladder_devices": [
+    "M57",
+    "M220",
+    "Y3F",
+    "M503",
+    "SM401",
+    "D100",
+    "T210",
+    "SM400",
+    "T200",
+    "SM412",
+    "D110",
+    "X1104",
+    "D110.0",
+    "M720",
+    "D110.1",
+    "X1105",
+    "D110.2",
+    "M721",
+    "M1321",
+    "M722",
+    "M210",
+    "M171",
+    "X111F",
+    "M723"
+  ]
+}

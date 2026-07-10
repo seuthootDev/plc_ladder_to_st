@@ -1,0 +1,1088 @@
+{
+  "program_no": "20",
+  "program_name": "Primer Robot",
+  "pou_name": "P20_PrimerRobot",
+  "project": "plc project_260626",
+  "cpu": "QCPU (Q mode) Q06H",
+  "csv_path": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/csv/20.csv",
+  "line_labels": [
+    {
+      "step": 0,
+      "label": "HOME"
+    },
+    {
+      "step": 13,
+      "label": "START"
+    },
+    {
+      "step": 62,
+      "label": "INPUT"
+    },
+    {
+      "step": 70,
+      "label": "OUTPUT"
+    },
+    {
+      "step": 82,
+      "label": "Car Type"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 4,
+      "label": "HOME",
+      "mnemonic": "LD",
+      "operand": "X111F",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 5,
+      "label": "",
+      "mnemonic": "MPS",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 6,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "T50",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 7,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M1353",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 8,
+      "label": "",
+      "mnemonic": "MPP",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 9,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "T50",
+      "preset": "K10",
+      "preset_ms": 1000,
+      "mov_dest": ""
+    },
+    {
+      "step": 18,
+      "label": "START",
+      "mnemonic": "LD<>",
+      "operand": "K0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 21,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M1321",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 22,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M50",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 23,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M7751",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 24,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M1362",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 25,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X7",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 26,
+      "label": "",
+      "mnemonic": "LDI",
+      "operand": "X111F",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 27,
+      "label": "",
+      "mnemonic": "ORI",
+      "operand": "X1119",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 28,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 29,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M1364",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 30,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M216",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 31,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M1362",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 32,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "T50",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 33,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M1364",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 34,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "T50",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 35,
+      "label": "",
+      "mnemonic": "ORB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 36,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 37,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X111D",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 38,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X111E",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 39,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X111A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 40,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M710",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 41,
+      "label": "",
+      "mnemonic": "MPS",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 42,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "T51",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 43,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "T52",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 44,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X111C",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 45,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M710",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 46,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y1116",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 47,
+      "label": "",
+      "mnemonic": "MPP",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 48,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "T51",
+      "preset": "K5",
+      "preset_ms": 500,
+      "mov_dest": ""
+    },
+    {
+      "step": 52,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "T52",
+      "preset": "K20",
+      "preset_ms": 2000,
+      "mov_dest": ""
+    },
+    {
+      "step": 56,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M216",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 57,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1117",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 58,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1036",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 59,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y1117",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 60,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M212",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 61,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y1103",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 67,
+      "label": "INPUT",
+      "mnemonic": "LD",
+      "operand": "X1101",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 68,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M710",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 69,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M1354",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 75,
+      "label": "OUTPUT",
+      "mnemonic": "LD",
+      "operand": "SM400",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 76,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y1100",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 77,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1002",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 78,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M712",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 79,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X103D",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 80,
+      "label": "",
+      "mnemonic": "ORB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 81,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y1102",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 88,
+      "label": "Car Type",
+      "mnemonic": "LD",
+      "operand": "SM400",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 89,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M700",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 90,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M701",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 91,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M702",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 92,
+      "label": "",
+      "mnemonic": "MPS",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 93,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M600",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 94,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "K1",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "D700"
+    },
+    {
+      "step": 96,
+      "label": "",
+      "mnemonic": "MRD",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 97,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M601",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 98,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "K2",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "D700"
+    },
+    {
+      "step": 100,
+      "label": "",
+      "mnemonic": "MRD",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 101,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M602",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 102,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "K3",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "D700"
+    },
+    {
+      "step": 104,
+      "label": "",
+      "mnemonic": "MPP",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 105,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "D600",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "D700"
+    },
+    {
+      "step": 107,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "D700",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "K1Y1118"
+    },
+    {
+      "step": 110,
+      "label": "",
+      "mnemonic": "LDP",
+      "operand": "X111F",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 111,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "K0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "D700"
+    },
+    {
+      "step": 113,
+      "label": "",
+      "mnemonic": "MOV",
+      "operand": "K0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": "D600"
+    },
+    {
+      "step": 115,
+      "label": "",
+      "mnemonic": "END",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    }
+  ],
+  "devices_used": [
+    "X111F",
+    "T50",
+    "M1353",
+    "K10",
+    "M1321",
+    "M50",
+    "M7751",
+    "M1362",
+    "X7",
+    "X1119",
+    "M1364",
+    "M216",
+    "X111D",
+    "X111E",
+    "X111A",
+    "M710",
+    "T51",
+    "T52",
+    "X111C",
+    "Y1116",
+    "K5",
+    "K20",
+    "X1117",
+    "X1036",
+    "Y1117",
+    "M212",
+    "Y1103",
+    "X1101",
+    "M1354",
+    "SM400",
+    "Y1100",
+    "X1002",
+    "M712",
+    "X103D",
+    "Y1102",
+    "M700",
+    "M701",
+    "M702",
+    "M600",
+    "M601",
+    "M602",
+    "D600",
+    "D700"
+  ],
+  "device_comments": {
+    "X111F": "현대    PRIMER] HOME",
+    "T50": "PRIMER  ROBOT   HOME    DELAY",
+    "M1353": "PRIMER  ROBOT   HOME    (M1350.3",
+    "M1321": "프라이머로보트 작업완료",
+    "M50": "제어반 비상정지",
+    "M7751": "Primer  Auto    Start   COND",
+    "M1362": "PRIMER  RB STARTCONDITION",
+    "X7": "로보트 재기동    [PB]",
+    "X1119": "현대[    PRIMER] program end",
+    "M1364": "로봇 재기동PRIMER        (M1352.2",
+    "M216": "현대 프라이머자동기동",
+    "X111D": "현대 로봇    PRIMER] Auto mode",
+    "X111E": "현대    PRIMER] Robot   Ready On",
+    "X111A": "현대    PRIMER] Robot   Error",
+    "M710": "프라이머로보트[HMI]     PASS PB",
+    "T51": "PRIMER  ROBOT   START   DELAY",
+    "T52": "PRIMER  ROBOT   START   OFF",
+    "X111C": "현대    PRIMER] Robot   Running",
+    "Y1116": "현대    PRIMER] ROBOT   START",
+    "X1117": "현대 로봇 비상정지    PRIMER]",
+    "X1036": "실러 로보트 비상정지[ RB]",
+    "Y1117": "현대    PRIMER] ROBOT   PAUSE",
+    "M212": "이상해제",
+    "Y1103": "현대 로봇 이상해제    PRIMER]",
+    "X1101": "현대 센터링 간섭무    PRIMER]",
+    "M1354": "불간섭PRIMER  ROBOT     (M1350.4",
+    "SM400": "항상on",
+    "Y1100": "현대 센터링 진입가능    PRIMER]",
+    "X1002": "실러 프라이머로봇 상호인터록[ RB]",
+    "M712": "실러 로보트[HMI]         PASS PB",
+    "X103D": "실러[ RB]HOME    POSITION",
+    "Y1102": "현대 실러 상호인터록    PRIMER] RB",
+    "M700": "프라이머로보트 선택  _HMIPB",
+    "M701": "비젼 로보트 선택      _HMIPB",
+    "M702": "실러 로보트 선택      _HMIPB",
+    "M600": "프라이머차종선택1 HMI",
+    "M601": "프라이머차종선택2 HMI",
+    "M602": "프라이머차종선택4 HMI",
+    "D600": "프라이머차종입력",
+    "D700": "프라이머차종"
+  },
+  "timer_presets": [
+    {
+      "step": 9,
+      "timer": "T50",
+      "preset": "K10"
+    },
+    {
+      "step": 48,
+      "timer": "T51",
+      "preset": "K5"
+    },
+    {
+      "step": 52,
+      "timer": "T52",
+      "preset": "K20"
+    }
+  ],
+  "var_hints": [
+    {
+      "device": "X111F",
+      "comment": "현대    PRIMER] HOME",
+      "data_type": "BOOL",
+      "st_name": "X111F"
+    },
+    {
+      "device": "T50",
+      "comment": "PRIMER  ROBOT   HOME    DELAY",
+      "data_type": "TON",
+      "st_name": "T50"
+    },
+    {
+      "device": "M1353",
+      "comment": "PRIMER  ROBOT   HOME    (M1350.3",
+      "data_type": "BOOL",
+      "st_name": "M1353"
+    },
+    {
+      "device": "K10",
+      "comment": "",
+      "data_type": "CONST",
+      "st_name": "K10"
+    },
+    {
+      "device": "M1321",
+      "comment": "프라이머로보트 작업완료",
+      "data_type": "BOOL",
+      "st_name": "M1321"
+    },
+    {
+      "device": "M50",
+      "comment": "제어반 비상정지",
+      "data_type": "BOOL",
+      "st_name": "M50"
+    },
+    {
+      "device": "M7751",
+      "comment": "Primer  Auto    Start   COND",
+      "data_type": "BOOL",
+      "st_name": "M7751"
+    },
+    {
+      "device": "M1362",
+      "comment": "PRIMER  RB STARTCONDITION",
+      "data_type": "BOOL",
+      "st_name": "M1362"
+    },
+    {
+      "device": "X7",
+      "comment": "로보트 재기동    [PB]",
+      "data_type": "BOOL",
+      "st_name": "X7"
+    },
+    {
+      "device": "X1119",
+      "comment": "현대[    PRIMER] program end",
+      "data_type": "BOOL",
+      "st_name": "X1119"
+    },
+    {
+      "device": "M1364",
+      "comment": "로봇 재기동PRIMER        (M1352.2",
+      "data_type": "BOOL",
+      "st_name": "M1364"
+    },
+    {
+      "device": "M216",
+      "comment": "현대 프라이머자동기동",
+      "data_type": "BOOL",
+      "st_name": "M216"
+    },
+    {
+      "device": "X111D",
+      "comment": "현대 로봇    PRIMER] Auto mode",
+      "data_type": "BOOL",
+      "st_name": "X111D"
+    },
+    {
+      "device": "X111E",
+      "comment": "현대    PRIMER] Robot   Ready On",
+      "data_type": "BOOL",
+      "st_name": "X111E"
+    },
+    {
+      "device": "X111A",
+      "comment": "현대    PRIMER] Robot   Error",
+      "data_type": "BOOL",
+      "st_name": "X111A"
+    },
+    {
+      "device": "M710",
+      "comment": "프라이머로보트[HMI]     PASS PB",
+      "data_type": "BOOL",
+      "st_name": "M710"
+    },
+    {
+      "device": "T51",
+      "comment": "PRIMER  ROBOT   START   DELAY",
+      "data_type": "TON",
+      "st_name": "T51"
+    },
+    {
+      "device": "T52",
+      "comment": "PRIMER  ROBOT   START   OFF",
+      "data_type": "TON",
+      "st_name": "T52"
+    },
+    {
+      "device": "X111C",
+      "comment": "현대    PRIMER] Robot   Running",
+      "data_type": "BOOL",
+      "st_name": "X111C"
+    },
+    {
+      "device": "Y1116",
+      "comment": "현대    PRIMER] ROBOT   START",
+      "data_type": "BOOL",
+      "st_name": "Y1116"
+    },
+    {
+      "device": "K5",
+      "comment": "",
+      "data_type": "CONST",
+      "st_name": "K5"
+    },
+    {
+      "device": "K20",
+      "comment": "",
+      "data_type": "CONST",
+      "st_name": "K20"
+    },
+    {
+      "device": "X1117",
+      "comment": "현대 로봇 비상정지    PRIMER]",
+      "data_type": "BOOL",
+      "st_name": "X1117"
+    },
+    {
+      "device": "X1036",
+      "comment": "실러 로보트 비상정지[ RB]",
+      "data_type": "BOOL",
+      "st_name": "X1036"
+    },
+    {
+      "device": "Y1117",
+      "comment": "현대    PRIMER] ROBOT   PAUSE",
+      "data_type": "BOOL",
+      "st_name": "Y1117"
+    },
+    {
+      "device": "M212",
+      "comment": "이상해제",
+      "data_type": "BOOL",
+      "st_name": "M212"
+    },
+    {
+      "device": "Y1103",
+      "comment": "현대 로봇 이상해제    PRIMER]",
+      "data_type": "BOOL",
+      "st_name": "Y1103"
+    },
+    {
+      "device": "X1101",
+      "comment": "현대 센터링 간섭무    PRIMER]",
+      "data_type": "BOOL",
+      "st_name": "X1101"
+    },
+    {
+      "device": "M1354",
+      "comment": "불간섭PRIMER  ROBOT     (M1350.4",
+      "data_type": "BOOL",
+      "st_name": "M1354"
+    },
+    {
+      "device": "SM400",
+      "comment": "항상on",
+      "data_type": "BOOL",
+      "st_name": "SM400"
+    },
+    {
+      "device": "Y1100",
+      "comment": "현대 센터링 진입가능    PRIMER]",
+      "data_type": "BOOL",
+      "st_name": "Y1100"
+    },
+    {
+      "device": "X1002",
+      "comment": "실러 프라이머로봇 상호인터록[ RB]",
+      "data_type": "BOOL",
+      "st_name": "X1002"
+    },
+    {
+      "device": "M712",
+      "comment": "실러 로보트[HMI]         PASS PB",
+      "data_type": "BOOL",
+      "st_name": "M712"
+    },
+    {
+      "device": "X103D",
+      "comment": "실러[ RB]HOME    POSITION",
+      "data_type": "BOOL",
+      "st_name": "X103D"
+    },
+    {
+      "device": "Y1102",
+      "comment": "현대 실러 상호인터록    PRIMER] RB",
+      "data_type": "BOOL",
+      "st_name": "Y1102"
+    },
+    {
+      "device": "M700",
+      "comment": "프라이머로보트 선택  _HMIPB",
+      "data_type": "BOOL",
+      "st_name": "M700"
+    },
+    {
+      "device": "M701",
+      "comment": "비젼 로보트 선택      _HMIPB",
+      "data_type": "BOOL",
+      "st_name": "M701"
+    },
+    {
+      "device": "M702",
+      "comment": "실러 로보트 선택      _HMIPB",
+      "data_type": "BOOL",
+      "st_name": "M702"
+    },
+    {
+      "device": "M600",
+      "comment": "프라이머차종선택1 HMI",
+      "data_type": "BOOL",
+      "st_name": "M600"
+    },
+    {
+      "device": "M601",
+      "comment": "프라이머차종선택2 HMI",
+      "data_type": "BOOL",
+      "st_name": "M601"
+    },
+    {
+      "device": "M602",
+      "comment": "프라이머차종선택4 HMI",
+      "data_type": "BOOL",
+      "st_name": "M602"
+    },
+    {
+      "device": "D600",
+      "comment": "프라이머차종입력",
+      "data_type": "WORD",
+      "st_name": "D600"
+    },
+    {
+      "device": "D700",
+      "comment": "프라이머차종",
+      "data_type": "WORD",
+      "st_name": "D700"
+    }
+  ],
+  "ladder_devices": [
+    "X1101",
+    "M1354",
+    "M1350.4",
+    "M710",
+    "SM400",
+    "Y1100",
+    "X1002",
+    "Y1102",
+    "M712",
+    "X103D",
+    "M700",
+    "M701",
+    "M702",
+    "M600",
+    "D700",
+    "M601",
+    "M602",
+    "D600",
+    "X111F",
+    "T70",
+    "M1553",
+    "M1556",
+    "M2005",
+    "M1522",
+    "M50",
+    "M7750",
+    "M1552",
+    "X7",
+    "M1555",
+    "M1552.2",
+    "M215",
+    "X103C",
+    "X103E",
+    "X103B",
+    "T71",
+    "T72",
+    "Y1030",
+    "Y1032",
+    "Y1035",
+    "X1117",
+    "X1036",
+    "Y1033"
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "description": "PDF/GX Works2 ladder branching patterns for ST visualization",
+  "style": {
+    "left_rail_x": 16,
+    "left_rail_stroke": "#374151",
+    "left_rail_width": 3,
+    "wire_stroke": "#374151",
+    "wire_width": 2,
+    "contact_color": "#2563eb",
+    "coil_color": "#dc2626",
+    "timer_color": "#d97706",
+    "font_family": "Consolas, 'Courier New', monospace",
+    "font_size_device": 10,
+    "font_size_rung_label": 10,
+    "contact_w": 56,
+    "contact_h": 26,
+    "coil_w": 80,
+    "coil_h": 26,
+    "timer_w": 100,
+    "timer_h": 36,
+    "series_gap": 6,
+    "branch_row_pitch": 42,
+    "rung_label_format": "R{n}  step {step}",
+    "junction_dot_r": 2.5
+  },
+  "patterns": [
+    {
+      "id": "series_and",
+      "name": "단순 직렬 AND",
+      "bool_shape": "AND(contact, contact, ...)",
+      "topology": "left rail --[A]--[B]--[C]--(coil)",
+      "layout_handler": "_layout_contact_series",
+      "pdf_examples": [
+        {
+          "program": "P33_Gripper",
+          "rung": 4,
+          "step": 29
+        }
+      ],
+      "notes": "분기 없음. 같은 y 레일에 좌→우 직렬."
+    },
+    {
+      "id": "parallel_or",
+      "name": "OR 병렬 합류",
+      "bool_shape": "OR(branch1, branch2, ...) 각 branch는 직렬",
+      "topology": "left rail +-- row0 --+\\n              +-- row1 --+-- merge --(coil)",
+      "layout_handler": "_layout_or_at_fork",
+      "pdf_examples": [
+        {
+          "program": "P02_Lamp",
+          "rung": 1,
+          "step": 0
+        }
+      ],
+      "notes": "왼쪽 수직 bus + 병렬 레일."
+    },
+    {
+      "id": "or_and_tail",
+      "name": "OR + AND 꼬리",
+      "bool_shape": "OR( AND(series), tail_contact )",
+      "topology": "row0 AND series + row1 tail -> merge",
+      "layout_handler": "_layout_or_and_tail",
+      "pdf_examples": [
+        {
+          "program": "P02_Lamp",
+          "rung": 2,
+          "step": 6
+        }
+      ],
+      "notes": "(M57 AND SM412) OR M503"
+    },
+    {
+      "id": "and_or_tail",
+      "name": "AND + OR 꼬리",
+      "bool_shape": "AND(head_series, OR(branch...))",
+      "topology": "head + OR branches -> merge",
+      "layout_handler": "_layout_and_or_tail",
+      "pdf_examples": [
+        {
+          "program": "P02_Lamp",
+          "rung": 3,
+          "step": 10
+        }
+      ],
+      "notes": "(M202 AND M210) OR M503"
+    },
+    {
+      "id": "nested_or_in_and",
+      "name": "AND 안 중첩 OR",
+      "bool_shape": "AND(A, OR(AND(B,C), AND(D,E)))",
+      "topology": "shared prefix + nested OR rows",
+      "layout_handler": "_layout_series_or_tail",
+      "pdf_examples": [
+        {
+          "program": "P02_Lamp",
+          "rung": 4,
+          "step": 14
+        }
+      ],
+      "notes": "M202 AND ((M211 AND SM412) OR (M215 AND M216))"
+    },
+    {
+      "id": "head_fork_or",
+      "name": "머리 직렬 후 ORB (ANB/ORB)",
+      "bool_shape": "AND(head_series, OR(branch1, branch2))",
+      "topology": "head --+ branch0\\n        + branch1",
+      "layout_handler": "_layout_head_fork_or",
+      "pdf_examples": [
+        {
+          "program": "P33_Gripper",
+          "rung": 6,
+          "step": 49
+        }
+      ],
+      "notes": "head 접점 뒤 포크"
+    },
+    {
+      "id": "triple_rail_orb_timer",
+      "name": "3레일 ORB + 타이머",
+      "bool_shape": "OR( AND(OR(a,b), Tn), alt_series )",
+      "topology": "3 rows, timer on rows 0-1 merge",
+      "layout_handler": "_layout_triple_rail_orb",
+      "pdf_examples": [
+        {
+          "program": "P99_Error",
+          "rung": 6,
+          "step": 41
+        }
+      ],
+      "notes": "P99 Centering Error"
+    },
+    {
+      "id": "gripper_orb",
+      "name": "그리퍼형 3레일 ORB",
+      "bool_shape": "OR(AND(prefix, OR(a,b)), alt_series)",
+      "topology": "row0 prefix+branchA, row1 branchB, row2 alt",
+      "layout_handler": "_layout_gripper_orb",
+      "pdf_examples": [
+        {
+          "program": "P99_Error",
+          "rung": 9,
+          "step": 83
+        }
+      ],
+      "notes": "Y54/Y56/X1C | X1D | M3100"
+    },
+    {
+      "id": "sensor_mps_fork",
+      "name": "MPS 센서 분기",
+      "bool_shape": "rung: head AND (coil_path | timer_path)",
+      "topology": "head fork -> coil line / timer line",
+      "layout_handler": "_layout_sensor_mps_path",
+      "pdf_examples": [
+        {
+          "program": "P30_Centering",
+          "rung": 1,
+          "step": 0
+        }
+      ],
+      "notes": "MPS 후 이중 포크"
+    },
+    {
+      "id": "parallel_outputs",
+      "name": "다중 출력",
+      "bool_shape": "one condition, multiple actions",
+      "topology": "condition -> multiple coils",
+      "layout_handler": "_layout_parallel_actions",
+      "pdf_examples": [
+        {
+          "program": "P33_Gripper",
+          "rung": 6,
+          "step": 49
+        }
+      ],
+      "notes": "SET/OUT 여러 개"
+    },
+    {
+      "id": "timer_on_branch",
+      "name": "분기 타이머",
+      "bool_shape": "AND(..., Tn) on branch",
+      "topology": "timer box on branch",
+      "layout_handler": "_layout_action",
+      "pdf_examples": [
+        {
+          "program": "P33_Gripper",
+          "rung": 1,
+          "step": 0
+        }
+      ],
+      "notes": "T#presetms 표기"
+    },
+    {
+      "id": "set_rst",
+      "name": "SET / RST",
+      "bool_shape": "SET or RST action",
+      "topology": "S device / R device",
+      "layout_handler": "_layout_action",
+      "pdf_examples": [
+        {
+          "program": "P01_Main",
+          "rung": 1,
+          "step": 0
+        }
+      ],
+      "notes": "S/R 라벨"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "source_pdf": "12314_extracted.txt",
+  "project_title": "Title",
+  "timer_low_speed_ms": 100,
+  "timer_high_speed_ms": 10.0,
+  "programs": [
+    {
+      "program_no": "01",
+      "name": "Main",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "02",
+      "name": "Lamp",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "10",
+      "name": "Primer Vision",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "11",
+      "name": "Sealer Vision",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "12",
+      "name": "Body Vision",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "20",
+      "name": "Primer Robot",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "21",
+      "name": "Body Robot",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "30",
+      "name": "Centering",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "31",
+      "name": "Sealer",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "32",
+      "name": "Primer",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "33",
+      "name": "Gripper",
+      "execute_type": "Scan"
+    },
+    {
+      "program_no": "99",
+      "name": "Error",
+      "execute_type": "Scan"
+    }
+  ]
+}

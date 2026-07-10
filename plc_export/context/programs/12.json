@@ -1,0 +1,453 @@
+{
+  "program_no": "12",
+  "program_name": "Body Vision",
+  "pou_name": "P12_BodyVision",
+  "project": "plc project_260626",
+  "cpu": "QCPU (Q mode) Q06H",
+  "csv_path": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/csv/12.csv",
+  "line_labels": [],
+  "instructions": [
+    {
+      "step": 0,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1011",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 1,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D310.0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 2,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D310.1",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 3,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1012",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 4,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D310.7",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 5,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M60",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 6,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D310.E",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 7,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 8,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 9,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 10,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D310.C",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 11,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "D300.0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 12,
+      "label": "",
+      "mnemonic": "SET",
+      "operand": "M6000",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 13,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 14,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 15,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 16,
+      "label": "",
+      "mnemonic": "RST",
+      "operand": "M6000",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 17,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "D300.1",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 18,
+      "label": "",
+      "mnemonic": "SET",
+      "operand": "M6001",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 19,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 20,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 21,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 22,
+      "label": "",
+      "mnemonic": "RST",
+      "operand": "M6001",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 23,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "D300.2",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 24,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "D300.3",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 25,
+      "label": "",
+      "mnemonic": "SET",
+      "operand": "M6100",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 26,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 27,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 28,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 29,
+      "label": "",
+      "mnemonic": "RST",
+      "operand": "M6100",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 30,
+      "label": "",
+      "mnemonic": "END",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    }
+  ],
+  "devices_used": [
+    "X1011",
+    "D310.0",
+    "D310.1",
+    "X1012",
+    "D310.7",
+    "M60",
+    "D310",
+    "M210",
+    "M175",
+    "M174",
+    "D300.0",
+    "M6000",
+    "D300.1",
+    "M6001",
+    "D300.2",
+    "D300.3",
+    "M6100"
+  ],
+  "device_comments": {
+    "X1011": "실러[ RB]BODY START",
+    "X1012": "실러[ RB]GAP START",
+    "M60": "실러 로보트 작업완료",
+    "M210": "운전모드 수동[ ]",
+    "M175": "실러작업완료[HMI] RST PB",
+    "M174": "실러작업완료[HMI] SET PB",
+    "M6000": "바디비전OK",
+    "M6001": "바디비전NG",
+    "M6100": "Gap Complete"
+  },
+  "timer_presets": [],
+  "var_hints": [
+    {
+      "device": "X1011",
+      "comment": "실러[ RB]BODY START",
+      "data_type": "BOOL",
+      "st_name": "X1011"
+    },
+    {
+      "device": "D310.0",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D310_0"
+    },
+    {
+      "device": "D310.1",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D310_1"
+    },
+    {
+      "device": "X1012",
+      "comment": "실러[ RB]GAP START",
+      "data_type": "BOOL",
+      "st_name": "X1012"
+    },
+    {
+      "device": "D310.7",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D310_7"
+    },
+    {
+      "device": "M60",
+      "comment": "실러 로보트 작업완료",
+      "data_type": "BOOL",
+      "st_name": "M60"
+    },
+    {
+      "device": "D310",
+      "comment": "",
+      "data_type": "WORD",
+      "st_name": "D310"
+    },
+    {
+      "device": "M210",
+      "comment": "운전모드 수동[ ]",
+      "data_type": "BOOL",
+      "st_name": "M210"
+    },
+    {
+      "device": "M175",
+      "comment": "실러작업완료[HMI] RST PB",
+      "data_type": "BOOL",
+      "st_name": "M175"
+    },
+    {
+      "device": "M174",
+      "comment": "실러작업완료[HMI] SET PB",
+      "data_type": "BOOL",
+      "st_name": "M174"
+    },
+    {
+      "device": "D300.0",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D300_0"
+    },
+    {
+      "device": "M6000",
+      "comment": "바디비전OK",
+      "data_type": "BOOL",
+      "st_name": "M6000"
+    },
+    {
+      "device": "D300.1",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D300_1"
+    },
+    {
+      "device": "M6001",
+      "comment": "바디비전NG",
+      "data_type": "BOOL",
+      "st_name": "M6001"
+    },
+    {
+      "device": "D300.2",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D300_2"
+    },
+    {
+      "device": "D300.3",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "D300_3"
+    },
+    {
+      "device": "M6100",
+      "comment": "Gap Complete",
+      "data_type": "BOOL",
+      "st_name": "M6100"
+    }
+  ],
+  "ladder_devices": [
+    "X111F",
+    "T50",
+    "M1353",
+    "M1350.3",
+    "M1321",
+    "M50",
+    "M7751",
+    "M1362",
+    "X7",
+    "M1364",
+    "M1352.2",
+    "X1119",
+    "M216",
+    "X111D",
+    "X111E",
+    "X111A",
+    "M710",
+    "T51",
+    "T52",
+    "X111C",
+    "Y1116",
+    "X1117",
+    "X1036",
+    "Y1117",
+    "M212",
+    "Y1103"
+  ]
+}

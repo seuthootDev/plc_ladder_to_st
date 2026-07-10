@@ -1,0 +1,799 @@
+{
+  "program_no": "31",
+  "program_name": "Sealer",
+  "pou_name": "P31_Sealer",
+  "project": "plc project_260626",
+  "cpu": "QCPU (Q mode) Q06H",
+  "csv_path": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/csv/31.csv",
+  "line_labels": [],
+  "instructions": [
+    {
+      "step": 0,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "SM400",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 1,
+      "label": "",
+      "mnemonic": "MPS",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 2,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X1A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 3,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M2500",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 4,
+      "label": "",
+      "mnemonic": "MPP",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 5,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X1B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 6,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M2501",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 7,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 8,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 9,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M2520",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 10,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M202",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 11,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M2521",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 12,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M2521",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 13,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M211",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 14,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1039",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 15,
+      "label": "",
+      "mnemonic": "ORI",
+      "operand": "M999",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 16,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 17,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X1004",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 18,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 19,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M522",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 20,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "X1004",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 21,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 22,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M523",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 23,
+      "label": "",
+      "mnemonic": "ORB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 24,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 25,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M521",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 26,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 27,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "Y49",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 28,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y48",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 29,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M2521",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 30,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M211",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 31,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 32,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1004",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 33,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "Y49",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 34,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 35,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 36,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M523",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 37,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M2527",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 38,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 39,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M522",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 40,
+      "label": "",
+      "mnemonic": "ORB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 41,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 42,
+      "label": "",
+      "mnemonic": "LDI",
+      "operand": "M521",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 43,
+      "label": "",
+      "mnemonic": "ORI",
+      "operand": "M999",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 44,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 45,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 46,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "Y48",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 47,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y49",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 48,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M2521",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 49,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 50,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M526",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 51,
+      "label": "",
+      "mnemonic": "OR",
+      "operand": "M2527",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 52,
+      "label": "",
+      "mnemonic": "ANB",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 53,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "X1A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 54,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "M2527",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 55,
+      "label": "",
+      "mnemonic": "LDI",
+      "operand": "Y48",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 56,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "Y49",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 57,
+      "label": "",
+      "mnemonic": "INV",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 58,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y2B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 59,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "Y48",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 60,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y4C",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 61,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "Y49",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 62,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "Y4A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 63,
+      "label": "",
+      "mnemonic": "END",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    }
+  ],
+  "devices_used": [
+    "SM400",
+    "X1A",
+    "M2500",
+    "X1B",
+    "M2501",
+    "M2520",
+    "M202",
+    "M2521",
+    "M211",
+    "X1039",
+    "M999",
+    "X1004",
+    "M210",
+    "M522",
+    "M523",
+    "M521",
+    "Y49",
+    "Y48",
+    "M2527",
+    "M526",
+    "Y2B",
+    "Y4C",
+    "Y4A"
+  ],
+  "device_comments": {
+    "SM400": "항상on",
+    "X1A": "실링 카트리지후진단",
+    "M2500": "실링 카트리지후진단 원점      [ ]",
+    "X1B": "실링 카트리지전진단",
+    "M2501": "실링 카트리지전진단",
+    "M2520": "실링 카트리지원점위치",
+    "M202": "제어반 운전준비완료",
+    "M2521": "실링 카트리지운전준비완료",
+    "M211": "운전모드 자동[ ]",
+    "X1039": "실러[ RB]CYCLE   START",
+    "X1004": "실러 실러 토출[ RB]  ON",
+    "M210": "운전모드 수동[ ]",
+    "M522": "실링카트리지정회전[HMI]",
+    "M523": "실링카트리지역회전[HMI]",
+    "M521": "실러토출미사용[HMI]   PB",
+    "Y49": "실링 카트리지역회전 원점      [ ]",
+    "Y48": "실링 카트리지정회전 토출      [ ]",
+    "M2527": "실링 카트리지원점복귀보조",
+    "M526": "실링 카트리지 원점복귀[HMI]    PB",
+    "Y2B": "실링 카트리지모터 브레이크",
+    "Y4C": "컨트롤러속도선택DM300   1",
+    "Y4A": "실링 모터 알람해제속도선택  2"
+  },
+  "timer_presets": [],
+  "var_hints": [
+    {
+      "device": "SM400",
+      "comment": "항상on",
+      "data_type": "BOOL",
+      "st_name": "SM400"
+    },
+    {
+      "device": "X1A",
+      "comment": "실링 카트리지후진단",
+      "data_type": "BOOL",
+      "st_name": "X1A"
+    },
+    {
+      "device": "M2500",
+      "comment": "실링 카트리지후진단 원점      [ ]",
+      "data_type": "BOOL",
+      "st_name": "M2500"
+    },
+    {
+      "device": "X1B",
+      "comment": "실링 카트리지전진단",
+      "data_type": "BOOL",
+      "st_name": "X1B"
+    },
+    {
+      "device": "M2501",
+      "comment": "실링 카트리지전진단",
+      "data_type": "BOOL",
+      "st_name": "M2501"
+    },
+    {
+      "device": "M2520",
+      "comment": "실링 카트리지원점위치",
+      "data_type": "BOOL",
+      "st_name": "M2520"
+    },
+    {
+      "device": "M202",
+      "comment": "제어반 운전준비완료",
+      "data_type": "BOOL",
+      "st_name": "M202"
+    },
+    {
+      "device": "M2521",
+      "comment": "실링 카트리지운전준비완료",
+      "data_type": "BOOL",
+      "st_name": "M2521"
+    },
+    {
+      "device": "M211",
+      "comment": "운전모드 자동[ ]",
+      "data_type": "BOOL",
+      "st_name": "M211"
+    },
+    {
+      "device": "X1039",
+      "comment": "실러[ RB]CYCLE   START",
+      "data_type": "BOOL",
+      "st_name": "X1039"
+    },
+    {
+      "device": "M999",
+      "comment": "",
+      "data_type": "BOOL",
+      "st_name": "M999"
+    },
+    {
+      "device": "X1004",
+      "comment": "실러 실러 토출[ RB]  ON",
+      "data_type": "BOOL",
+      "st_name": "X1004"
+    },
+    {
+      "device": "M210",
+      "comment": "운전모드 수동[ ]",
+      "data_type": "BOOL",
+      "st_name": "M210"
+    },
+    {
+      "device": "M522",
+      "comment": "실링카트리지정회전[HMI]",
+      "data_type": "BOOL",
+      "st_name": "M522"
+    },
+    {
+      "device": "M523",
+      "comment": "실링카트리지역회전[HMI]",
+      "data_type": "BOOL",
+      "st_name": "M523"
+    },
+    {
+      "device": "M521",
+      "comment": "실러토출미사용[HMI]   PB",
+      "data_type": "BOOL",
+      "st_name": "M521"
+    },
+    {
+      "device": "Y49",
+      "comment": "실링 카트리지역회전 원점      [ ]",
+      "data_type": "BOOL",
+      "st_name": "Y49"
+    },
+    {
+      "device": "Y48",
+      "comment": "실링 카트리지정회전 토출      [ ]",
+      "data_type": "BOOL",
+      "st_name": "Y48"
+    },
+    {
+      "device": "M2527",
+      "comment": "실링 카트리지원점복귀보조",
+      "data_type": "BOOL",
+      "st_name": "M2527"
+    },
+    {
+      "device": "M526",
+      "comment": "실링 카트리지 원점복귀[HMI]    PB",
+      "data_type": "BOOL",
+      "st_name": "M526"
+    },
+    {
+      "device": "Y2B",
+      "comment": "실링 카트리지모터 브레이크",
+      "data_type": "BOOL",
+      "st_name": "Y2B"
+    },
+    {
+      "device": "Y4C",
+      "comment": "컨트롤러속도선택DM300   1",
+      "data_type": "BOOL",
+      "st_name": "Y4C"
+    },
+    {
+      "device": "Y4A",
+      "comment": "실링 모터 알람해제속도선택  2",
+      "data_type": "BOOL",
+      "st_name": "Y4A"
+    }
+  ],
+  "ladder_devices": [
+    "M2521",
+    "M210",
+    "M526",
+    "X1A",
+    "M2527",
+    "Y48",
+    "Y49",
+    "Y2B",
+    "Y4C",
+    "Y4A",
+    "X2",
+    "T2",
+    "M110",
+    "M111",
+    "X3",
+    "T3",
+    "X1103",
+    "M102",
+    "M103",
+    "M100"
+  ]
+}

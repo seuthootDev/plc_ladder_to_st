@@ -1,0 +1,656 @@
+{
+  "program_no": "11",
+  "program_name": "Sealer Vision",
+  "pou_name": "P11_SealerVision",
+  "project": "plc project_260626",
+  "cpu": "QCPU (Q mode) Q06H",
+  "csv_path": "C:/Users/user/Documents/카카오톡 받은 파일/nocode 과제 요청 자료/nocode 과제 요청 자료/plc/csv/11.csv",
+  "line_labels": [
+    {
+      "step": 10,
+      "label": "POS"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 0,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "SM400",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 1,
+      "label": "",
+      "mnemonic": "MPS",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 2,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "D200.F",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 3,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "T201",
+      "preset": "K50",
+      "preset_ms": 5000,
+      "mov_dest": ""
+    },
+    {
+      "step": 7,
+      "label": "",
+      "mnemonic": "MPP",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 8,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "SM412",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 9,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.F",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 14,
+      "label": "POS",
+      "mnemonic": "LD",
+      "operand": "SM400",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 15,
+      "label": "",
+      "mnemonic": "MPS",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 16,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X100B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 17,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.8",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 18,
+      "label": "",
+      "mnemonic": "MRD",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 19,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X100C",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 20,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.9",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 21,
+      "label": "",
+      "mnemonic": "MRD",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 22,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X100D",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 23,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 24,
+      "label": "",
+      "mnemonic": "MPP",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 25,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "X100E",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 26,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.B",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 27,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1009",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 28,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 29,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X1009",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 30,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.1",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 31,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "X100A",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 32,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.2",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 33,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M60",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 34,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.E",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 35,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 36,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 37,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 38,
+      "label": "",
+      "mnemonic": "OUT",
+      "operand": "D210.C",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 39,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "D200.0",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 40,
+      "label": "",
+      "mnemonic": "SET",
+      "operand": "M5000",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 41,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 42,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 43,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 44,
+      "label": "",
+      "mnemonic": "RST",
+      "operand": "M5000",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 45,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "D200.1",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 46,
+      "label": "",
+      "mnemonic": "SET",
+      "operand": "M5001",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 47,
+      "label": "",
+      "mnemonic": "LD",
+      "operand": "M210",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 48,
+      "label": "",
+      "mnemonic": "AND",
+      "operand": "M175",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 49,
+      "label": "",
+      "mnemonic": "ANI",
+      "operand": "M174",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 50,
+      "label": "",
+      "mnemonic": "RST",
+      "operand": "M5001",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    },
+    {
+      "step": 51,
+      "label": "",
+      "mnemonic": "END",
+      "operand": "",
+      "preset": "",
+      "preset_ms": null,
+      "mov_dest": ""
+    }
+  ],
+  "devices_used": [
+    "SM400",
+    "D200",
+    "T201",
+    "K50",
+    "SM412",
+    "D210",
+    "X100B",
+    "D210.8",
+    "X100C",
+    "D210.9",
+    "X100D",
+    "X100E",
+    "X1009",
+    "D210.0",
+    "D210.1",
+    "X100A",
+    "D210.2",
+    "M60",
+    "M210",
+    "M175",
+    "M174",
+    "D200.0",
+    "M5000",
+    "D200.1",
+    "M5001"
+  ],
+  "device_comments": {
+    "SM400": "항상on",
+    "D200": "실러비전→ PLC",
+    "T201": "실러비전통신이상",
+    "SM412": "초 클럭1",
+    "D210": "실러비전PLC →",
+    "X100B": "실러 구간[ RB]  1",
+    "D210.8": "실러비전PLC →",
+    "X100C": "실러 구간[ RB]  2",
+    "D210.9": "실러비전PLC →",
+    "X100D": "실러 구간[ RB]  4",
+    "X100E": "실러 구간[ RB]  8",
+    "X1009": "실러 실러비전스타트[ RB]",
+    "D210.0": "실러비전PLC →",
+    "D210.1": "실러비전PLC →",
+    "X100A": "실러 실러비전[ RB] OFF",
+    "D210.2": "실러비전PLC →",
+    "M60": "실러 로보트 작업완료",
+    "M210": "운전모드 수동[ ]",
+    "M175": "실러작업완료[HMI] RST PB",
+    "M174": "실러작업완료[HMI] SET PB",
+    "D200.0": "실러비전→ PLC",
+    "M5000": "실러비전OK",
+    "D200.1": "실러비전→ PLC",
+    "M5001": "실러비전NG"
+  },
+  "timer_presets": [
+    {
+      "step": 3,
+      "timer": "T201",
+      "preset": "K50"
+    }
+  ],
+  "var_hints": [
+    {
+      "device": "SM400",
+      "comment": "항상on",
+      "data_type": "BOOL",
+      "st_name": "SM400"
+    },
+    {
+      "device": "D200",
+      "comment": "실러비전→ PLC",
+      "data_type": "WORD",
+      "st_name": "D200"
+    },
+    {
+      "device": "T201",
+      "comment": "실러비전통신이상",
+      "data_type": "TON",
+      "st_name": "T201"
+    },
+    {
+      "device": "K50",
+      "comment": "",
+      "data_type": "CONST",
+      "st_name": "K50"
+    },
+    {
+      "device": "SM412",
+      "comment": "초 클럭1",
+      "data_type": "BOOL",
+      "st_name": "SM412"
+    },
+    {
+      "device": "D210",
+      "comment": "실러비전PLC →",
+      "data_type": "WORD",
+      "st_name": "D210"
+    },
+    {
+      "device": "X100B",
+      "comment": "실러 구간[ RB]  1",
+      "data_type": "BOOL",
+      "st_name": "X100B"
+    },
+    {
+      "device": "D210.8",
+      "comment": "실러비전PLC →",
+      "data_type": "BOOL",
+      "st_name": "D210_8"
+    },
+    {
+      "device": "X100C",
+      "comment": "실러 구간[ RB]  2",
+      "data_type": "BOOL",
+      "st_name": "X100C"
+    },
+    {
+      "device": "D210.9",
+      "comment": "실러비전PLC →",
+      "data_type": "BOOL",
+      "st_name": "D210_9"
+    },
+    {
+      "device": "X100D",
+      "comment": "실러 구간[ RB]  4",
+      "data_type": "BOOL",
+      "st_name": "X100D"
+    },
+    {
+      "device": "X100E",
+      "comment": "실러 구간[ RB]  8",
+      "data_type": "BOOL",
+      "st_name": "X100E"
+    },
+    {
+      "device": "X1009",
+      "comment": "실러 실러비전스타트[ RB]",
+      "data_type": "BOOL",
+      "st_name": "X1009"
+    },
+    {
+      "device": "D210.0",
+      "comment": "실러비전PLC →",
+      "data_type": "BOOL",
+      "st_name": "D210_0"
+    },
+    {
+      "device": "D210.1",
+      "comment": "실러비전PLC →",
+      "data_type": "BOOL",
+      "st_name": "D210_1"
+    },
+    {
+      "device": "X100A",
+      "comment": "실러 실러비전[ RB] OFF",
+      "data_type": "BOOL",
+      "st_name": "X100A"
+    },
+    {
+      "device": "D210.2",
+      "comment": "실러비전PLC →",
+      "data_type": "BOOL",
+      "st_name": "D210_2"
+    },
+    {
+      "device": "M60",
+      "comment": "실러 로보트 작업완료",
+      "data_type": "BOOL",
+      "st_name": "M60"
+    },
+    {
+      "device": "M210",
+      "comment": "운전모드 수동[ ]",
+      "data_type": "BOOL",
+      "st_name": "M210"
+    },
+    {
+      "device": "M175",
+      "comment": "실러작업완료[HMI] RST PB",
+      "data_type": "BOOL",
+      "st_name": "M175"
+    },
+    {
+      "device": "M174",
+      "comment": "실러작업완료[HMI] SET PB",
+      "data_type": "BOOL",
+      "st_name": "M174"
+    },
+    {
+      "device": "D200.0",
+      "comment": "실러비전→ PLC",
+      "data_type": "BOOL",
+      "st_name": "D200_0"
+    },
+    {
+      "device": "M5000",
+      "comment": "실러비전OK",
+      "data_type": "BOOL",
+      "st_name": "M5000"
+    },
+    {
+      "device": "D200.1",
+      "comment": "실러비전→ PLC",
+      "data_type": "BOOL",
+      "st_name": "D200_1"
+    },
+    {
+      "device": "M5001",
+      "comment": "실러비전NG",
+      "data_type": "BOOL",
+      "st_name": "M5001"
+    }
+  ],
+  "ladder_devices": [
+    "D200.0",
+    "M5000",
+    "M210",
+    "M175",
+    "M174",
+    "D200.1",
+    "M5001",
+    "X1011",
+    "D310.0",
+    "D310.1",
+    "X1012",
+    "D310.7",
+    "M60",
+    "D310",
+    "D300.0",
+    "M6000",
+    "D300.1",
+    "M6001",
+    "D300.2",
+    "M6100",
+    "D300.3"
+  ]
+}
